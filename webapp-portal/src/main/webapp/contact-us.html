@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ychef APP| Contact Us</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="/assets/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="./plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+
+    <!-- fullCalendar 2.2.5-->
+    <link rel="stylesheet" href="./plugins/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="./plugins/fullcalendar/fullcalendar.print.css" media="print">
+
+    <!-- Custom CSS -->
+    <link href="/assets/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index2.html"><img src="/assets/logo-253x50.png" height="25px" alt=""></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">菜单 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">私人菜单</a></li>
+                            <li><a href="#">美食活动</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">成为主厨</a>
+                    </li>
+                    <li>
+                        <a href="#">EN｜中文</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="glyphicon glyphicon-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="glyphicon glyphicon-heart"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="jumbotron jumbotron-sm text-center" style="background:url('https://static.pexels.com/photos/7329/food-healthy-red-summer.jpg'); background-repeat:no-repeat;background-size:cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <h2>联系我们 <br><small>Feel free to contact us</small></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div class="container">
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm pd20">
+                <img class="img-responsive" src="/assets/logo-253x50.png"  alt=""><br>
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                您的名字</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                                </span>
+                                <input type="text" class="form-control" id="name" placeholder="您的名字" required="required" /></div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                邮箱地址</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="邮箱地址" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">选择服务:</option>
+                                <option value="service">客服服务</option>
+                                <option value="suggestions">产品建议</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                其他信息</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="其他信息"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            提交信息</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+            <legend><span class="glyphicon glyphicon-globe"></span> 办公地点</legend>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.1315335244403!2d-123.01094568431154!3d49.254952779328356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676df623d5ff7%3A0xdee0094a04e61c90!2s4299+Canada+Way+%23134%2C+Burnaby%2C+BC+V5G!5e0!3m2!1sen!2sca!4v1458860173917" width=100% height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <address>
+                <strong>Ychef, 厨说.</strong><br>
+                #134 – 4299 Canada Way<br>
+                Burnaby, BC, V5G 4Y2<br>
+                <abbr title="Phone">
+                    P:</abbr>
+                (855)688-5777
+            </address>
+            <address>
+                <strong>Ychef 团队</strong><br>
+                <a href="mailto:#">Ychef@ybagapp.com</a>
+            </address>
+            </form>
+
+        </div>
+    </div>
+    <hr class="featurette-divider">
+</div>
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container"> 
+            <div class="col-md-12">
+                <div class="row mt40 pd30">
+                    <div class="col-lg-3 footer-col">
+                        <h3>联系方式</h3>
+                        <br>
+                        <img class="img-responsive box-c" src="https://ybagapp.com/assets/ydai-phone-7a3af963ad2cd427a51722d21b3d73c4.png" width="100px" alt="">
+                        <br>
+                        <p>客服电话(免长途费)</p>
+                        <p>855.688.5777</p>
+                    </div>
+                    <div class="col-lg-3 footer-col">
+                        <h3>公司信息</h3>
+                        <br>
+                        <p><a href="#">关于厨说</a></p>
+                        <p><a href="contact-us.html">联系我们</a></p>
+                        <p><a href="#">成为主厨</a></p>
+                        <p><a href="#">用户协议</a></p>
+                        <p><a href="#">常见问题</a></p>
+
+                    </div>
+                    <div class="col-lg-3 footer-col">
+                        <h3>厨说服务号</h3>
+                        <br>
+                        <img class="img-responsive box-c" src="/assets/ychef-qrcode-200x200.png" width="120px" alt="">
+                    </div>
+                    <div class="col-lg-3 footer-col">
+                        <h3>厨说公众号</h3>
+                        <br>
+                        <img class="img-responsive box-c" src="/assets/ychef-qrcode-200x200.png" width="120px" alt="">
+                    </div>
+                </div>
+                
+                <hr style="border-top: 1px solid #4B4B4B;">
+            </div>
+            
+            <div class="row mt20 pd10 text-center">
+                <div class="col-md-12">
+                    <ul class="social list-inline">
+                        <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-lg fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-lg fa-youtube-play"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+                    
+            <div class="row pd10">
+                    <div class="col-md-4">
+                        <ul class="list-unstyled list-inline pull-left">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="text-muted pull-right">© 2015 Ychef - Yidai Media Corporation. All rights reserved.</p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery 2.1.4 -->
+    <script src="./plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="/assets/bootstrap.min.js"></script>
+    <!-- fullCalendar 2.2.5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="./plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script type="text/javascript">
+    </script>
+  </body>
+</html>

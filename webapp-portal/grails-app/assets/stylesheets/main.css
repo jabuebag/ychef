@@ -1,0 +1,467 @@
+/*
+*= require atom
+*/
+
+/*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);*/
+/*@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+/*!
+ * Main Custom Css
+ */
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+} 
+
+body { 
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 70px; 
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica,Arial,sans-serif;
+    /*font-family: 'Noto Sans', 'Roboto',sans-serif;*/
+    /*font-family: 'Helvetica', 'Hiragino Sans GB W3', 'Microsoft YaHei', '微软雅黑', 'SimSun', '宋体', 'Heiti', serif;*/
+	font-weight: 400;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    font-weight:700; 
+}
+
+a, button, .trans-all {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+a {
+    color: #9B9B9B;
+}
+
+a:hover{
+    color: #68C7C6;
+    text-decoration: none;
+}
+
+.price {
+    color:#68C7C6;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #F68585;
+    border-color: #F68585;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #68C7C6;
+    border-color: #68C7C6;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #ACCCBF;
+    border-color: #ACCCBF;
+}
+
+.btn-ghost {
+    color: #68C7C6;
+    background-color: transparent;
+    border: 3px solid;
+    border-color: #68C7C6;
+    padding:  15px 30px 15px 30px; 
+}
+
+.btn-ghost:hover {
+    color: #fff;
+    background-color: #68C7C6;
+    border-color: #68C7C6;
+}
+
+.btn-ghost-r {
+    color: #616569;
+    background-color: transparent;
+    border: 3px solid;
+    border-color: #616569;
+    padding:  15px 30px 15px 30px; 
+}
+
+.btn-ghost-r:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+
+/*.thumbnail {
+    border-radius: 0;
+}
+*/
+.top-line {
+	margin:0;
+	height: 3px;
+	border: none;
+	color:#F68585;
+	background-color:#F68585;
+}
+.color-lines > div {
+    float: left;
+    width: 33.33335%;
+    height: 5px;
+
+}
+.line-red {
+    background: #F68585;
+}
+.line-yellow {
+    background: #FFCC80;
+}
+.line-green {
+    background: #b5e3d8;
+}
+
+/* Pages header jumbotron */
+.jumbotron {
+    margin-top: -20px;
+    background: #68C7C6;
+    color: #FFF;
+}
+
+.jumbotron-sm { 
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+.jumbotron small {
+    color: #FFF;
+}
+
+.panel-default>.panel-heading {
+    border-left: 5px solid #68C7C6;
+}
+
+.navbar-toggle {
+    padding: 20px 20px;
+}
+
+/* Menu thumbnail caption */
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+    padding: 10;
+    border: 1px solid #dce0e0;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+/*.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(0, 0, 0, 0.75);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    line-height: 1.43;
+    color:#fff !important;
+    z-index:2;
+}
+
+.caption p {
+    margin-top: 45%;
+}*/
+
+.caption h4 {
+    font-weight: 700;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.caption p {
+    height: 40px;
+    overflow: hidden;
+    /*text-overflow: ellipsis; */
+}
+
+.thumbnail img {
+    width: 100%;                                
+}
+
+.thumbnail >.price {
+    position: absolute;
+    left: 0;
+    bottom: 180px;
+    background-color: #68C7C6;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    z-index:2;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/*.menu-disc {
+    padding:10px 20px;
+}
+*/
+
+/* Gallary Grid */
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    color:#9B9B9B;
+    /*margin: 50px 0;*/
+    background-color:#333;
+    background-image: url("diagmonds-141x142.png");
+    background-repeat: repeat;
+
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+/* Navigation */
+.navbar-default {
+	background-color:white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color:#68C7C6;
+}
+
+.navbar-inverse {
+    background-color:black;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #f0f0f0;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color:#68C7C6;
+    /*border-bottom: 3px solid #68C7C6;*/
+    box-shadow: 0px -3px 0px #68C7C6 inset;
+}
+
+/* slider */
+.hero-spacer {
+	border-radius: none;
+    /*margin-top: 20px;*/
+    /*height:513px;*/
+    min-height: 600px;
+    background-image: url("slide-960x513.png");
+    background-repeat: no-repeat;
+}
+
+
+
+/* Social Media Icons */
+.social ul {
+	text-align:center;
+}
+
+/*.social ul li {
+    margin: 15px;
+    list-style: none outside none;
+    display: inline-block;
+}*/
+
+.social i {
+    width: 40px;
+    height: 40px;
+    /*color: #F68585;*/
+    color: #ACCCBF;
+}
+
+.social i:hover {
+    color: #68C7C6;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+
+/* MARKETING CONTENT */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes */
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* Reservation Info */
+.menu {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.menu-reserve{
+    position: relative;
+    margin-left: auto; margin-right: auto;
+}
+
+/* Menus Details*/
+.menu-details{
+}
+
+.menu-details img {
+    width: 100%;
+}
+
+.menu-sign {
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    /*zoom: 1; */
+}
+
+.menu-sign >ul>li{
+    padding: 30px 25px 30px 25px;
+    
+}
+.menu-content {
+    margin-top:-100px;
+}
+
+/* CSS for Credit Card Payment form */
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+.form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+
+label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+/* 404 Error Page */
+.error-template { color:#fff; padding: 40px 15px;text-align: center;}
+.error-template  h1 { font-size: 200px;} 
+.error-actions { margin-top:15px;margin-bottom:15px; }
+.error-actions .btn { margin-right:10px; }
+
+
+.login-box, .register-box {
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+@media (min-width: 1200px) {
+    .menu {
+        margin-top: -20px;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+	.container {
+	    width: 60%;
+	}
+  	
+  	.navbar-brand{
+	    /*margin-right:200px;*/
+	    float:left;
+	}
+
+	.thumbnail {
+        position:relative;
+        overflow:hidden;
+        padding: 0;
+        border: 1px solid #dce0e0;
+        box-shadow: 0px 0px 5px #CCC;
+    }
+
+    /*.caption {
+        position:absolute;
+        top:0;
+        right:0;
+        background:rgba(0, 0, 0, 0.75);
+        width:100%;
+        height:100%;
+        padding:2%;
+        display: none;
+        text-align:center;
+        line-height: 1.43;
+        color:#fff !important;
+        z-index:2;
+    }*/
+
+
+    .menu-reserve{
+        /*position: fixed;*/
+    }
+
+    #sticky {
+    }
+
+    #sticky.stick {
+        position: fixed;
+        top: -305px;    
+    }
+
+    .menu-details{
+        float:right;
+    }
+
+    /* calender */
+    .fc-scroller { /* this class goes on elements for guaranteed vertical scrollbars */
+        overflow-y: show;
+        overflow-x: hidden;
+    }
+
+    .fc-scroller > * { /* we expect an immediate inner element */
+        position: relative; /* re-scope all positions */
+        width: 100%; /* hack to force re-sizing this inner element when scrollbars appear/disappear */
+        overflow: hidden; /* don't let negative margins or absolute positioning create further scroll */
+    }
+
+}

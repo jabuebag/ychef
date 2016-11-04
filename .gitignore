@@ -1,0 +1,9 @@
+*.iml
+.idea
+webapp-portal/.idea
+target
+.DS_Store
+.gradle
+build/
+webapp-portal/.asscache
+webapp-portal/src/main/webapp/uploadFiles/*

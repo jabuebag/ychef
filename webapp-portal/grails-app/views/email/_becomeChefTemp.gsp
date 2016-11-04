@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>有新的用户想成为chef</title>
+</head>
+
+<body style="margin: 40px; padding: 0;" bgcolor="#e9eaea">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td style="padding: 10px 0 30px 0;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                <tr>
+                    <td align="center" bgcolor="#333333" style="padding: 40px 0 30px 0; color: #333333; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+                        <img src="https://www.ychefapp.com/assets/logo-253x50.png" alt="遇见你的私人厨师" width="253" height="50" style="display: block;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#333333" style="padding: 5px 30px 30px 30px; color: #ffffff; font-size: 12px; font-family: Arial, sans-serif;">
+                        美食, 遇见, 你在温哥华的家.
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="color: #333333; font-family: Arial, sans-serif; font-size: 24px;">
+                                    <b>有新的用户想成为chef.</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px 0 30px 0; color: #333333; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                                    以下是用户注册的详细信息：
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <hr />
+                                            <td width="260" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td width="35%" style="padding: 15px 0 0 0; color: #82868b; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px;">
+                                                            <b style="color:#333;">First Name:</b> ${command.firstName}
+                                                        </td>
+                                                        <td style="padding: 15px 0 0 0; color: #82868b; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px;">
+                                                            <b style="color:#333;">Last Name:</b> ${command.lastName}
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 15px 0 0 0; color: #82868b; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px;">
+                                                            <b style="color:#333;">Phone:</b> ${command.telephone}
+                                                        </td>
+                                                        <td style="padding: 15px 0 0 0; color: #82868b; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px;">
+                                                            <b style="color:#333;">Email:</b> ${command.email}
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 15px 0 0 0; color: #82868b; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px;">
+                                                            <b style="color:#333;">Personal Bio:</b>
+                                                        </td>
+                                                        <td style="padding: 15px 0 0 0; color: #82868b; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px;">
+                                                             ${command.bio}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9eaea" style="padding: 30px 30px 30px 30px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" style="color: #9aa2a8; font-family: Arial, sans-serif; font-size: 12px;" >
+                                &reg; 2016 Ychef - Yidai Media Corporation. All rights reserved<br/> <br/>
+                                    <a href="#" style="color: #9aa2a8;"><font color="#9aa2a8">Unsubscribe</font></a> to this email instantly
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"  style="padding-top:20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
+                                                <a href="http://www.facebook.com/" style="color: #9aa2a8;">
+                                                    <img src="/assets/icons/social/Facebook.png" alt="Facebook" width="25" height="25" style="display: block;" border="0" />
+                                                </a>
+                                            </td>
+                                            <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                                            <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
+                                                <a href="http://www.twitter.com/" style="color: #9aa2a8;">
+                                                    <img src="/assets/icons/social/Twitter.png" alt="Twitter" width="25" height="25" style="display: block;" border="0" />
+                                                </a>
+                                            </td>
+                                            <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                                            <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
+                                                <a href="http://www.linkedin.com/" style="color: #9aa2a8;">
+                                                    <img src="/assets/icons/social/linkedin.png" alt="linkedin" width="25" height="25" style="display: block;" border="0" />
+                                                </a>
+                                            </td>
+                                            <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                                            <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
+                                                <a href="http://www.instagram.com/" style="color: #9aa2a8;">
+                                                    <img src="/assets/icons/social/Instagram.png" alt="instagram" width="25" height="25" style="display: block;" border="0" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

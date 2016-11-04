@@ -1,0 +1,436 @@
+/*!
+ * Home Page CSS
+ */
+
+html,
+body {
+    padding-top: 0; 
+    height: 100%;
+    background-color: white; 
+    /*background-image: url("diagmonds-light-141x142.png");
+    background-repeat: repeat;*/
+}
+
+/* full-size slider */
+/*#myCarousel h1{ font-size: 40px; font-weight:700; }*/
+
+.carousel-caption {
+    top: 25%;
+    bottom: auto;
+}
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill { /* Background images are set within the HTML using inline CSS, not here */
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-fade .carousel-inner .item {
+	-webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.main-text {
+    position: absolute;
+    top: 180px;
+    width: 96.66666666666666%;
+}
+
+
+
+/* Cates Lists */
+
+#custom_carousel .nav p{
+    font-weight: 700;
+    padding-top: 15px;
+    display:block;
+}
+
+#custom_carousel .nav img{
+    display:inline-block;
+}
+
+#custom_carousel .item {
+    color:#000;
+    padding:20px 0;
+}
+
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+}
+
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+
+#custom_carousel .controls li.active {
+    border-bottom:5px solid orange;
+}
+
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+#custom_carousel .gallary_description {}
+
+
+#custom_carousel .col-md-12 {padding:0;}
+
+/* CountTo */
+.counter-section strong {
+    display: block;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 100px;
+    color: #84C6CA;
+}
+
+.counter-section .thumbnail {
+    border: none;
+}
+
+span.count-description {
+    display: block;
+    color: #84C6CA;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.counter-wrap{
+    padding:50px 0;
+
+}
+
+.counter-section .alternate{
+   background-color: rgba(254,82,76, .2);
+}
+
+
+
+/* Recommendation Section */
+.recommend-bk {
+    background-image: url("diagmonds-141x142.png");
+    background-repeat: repeat;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-recommend {
+	padding:  15px 30px 15px 30px; 
+}
+
+/* custom thumbnail */
+.thumbnail {
+	padding: 0; 
+  border: none;
+  box-shadow: none;
+}
+
+
+.thumbnail .caption {
+    /*padding: 30px;*/
+}
+
+.thumbnail a>img, .thumbnail>img {
+    width: 100%;
+}
+
+/* Scroll Pointer */
+.scroll{
+	margin-top: 50px;
+	width: 15px;
+}
+
+#mouse-scroll span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	margin: 0 0 3px 6px;
+}
+
+.unu {
+ 	margin-top: 6px;
+}
+
+.unu, .doi, .trei {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-webkit-animation-direction: alternate;
+}
+
+.doi {
+  	-webkit-animation-delay: .2s;
+  	-moz-animation-delay: .2s;
+  	-webkit-animation-direction: alternate;
+}
+
+.trei {
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-webkit-animation-direction: alternate;
+}
+
+
+.mouse {
+	height: 45px;
+	width: 20px;
+	border-radius: 10px !important;
+	transform: none;
+	border: 2px solid white;
+	top: 170px;
+}
+
+.wheel
+{
+	height: 5px;
+	width: 2px;
+	display: block;
+	margin: 5px auto;
+	background: white;
+	position: relative;
+}
+
+.wheel
+{
+	-webkit-animation: mouse-wheel 1.2s ease infinite;
+	-moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+
+@-moz-keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+@keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+.bottom-sign {
+    height: 300px;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: url("/assets/about-us-desc-4.jpg");
+    background-repeat: no-repeat;
+}
+
+.bottom-sign , h1 p {
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 320px) {
+  /*.bottom-sign { width: 100%; }*/
+  .thumbnail svg {
+    width: 150px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 16px;
+  }
+
+  #custom_carousel .nav img{
+    width: 40px;
+  }
+
+  #custom_carousel .nav h4{
+    font-size: 12px;
+  }
+
+  .scroll{
+    display: none;
+  }
+}
+
+@media (min-width: 375px) {
+  /*.bottom-sign { width: 100%; }*/
+
+  .thumbnail svg {
+    width: 100px;
+  }
+
+  #custom_carousel .nav img{
+    width: 60px;
+  }
+
+  .content-section h4{
+    font-size: 20px;
+  }
+
+  .scroll{
+    display: none;
+  }
+  
+  .h2, .h3, h2, h3{
+    font-weight: 400;
+  }
+
+  .h4, h4 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    /*font-family: 'Noto Sans', 'Roboto',sans-serif;*/
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica,Arial,sans-serif;
+    font-weight:normal; 
+  }
+
+  .carousel-caption {
+    top: 40%;
+    bottom: auto;
+  }
+  
+  #myCarousel h1{ font-size: 60px; font-weight:700; }
+  
+  .main-text {
+      position: absolute;
+      top: 180px;
+      width: 96.66666666666666%;
+  }
+  
+  #custom_carousel .gallary_description {
+    position:absolute;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.7);
+    color: #84C6CA;
+  }
+
+  .thumbnail svg {
+    width: 100px;
+  }
+
+  #custom_carousel .nav img{
+    width: 100px;
+  }
+
+  .caption h4 {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+  }
+}
+
+  
+
+

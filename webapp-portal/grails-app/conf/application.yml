@@ -1,0 +1,205 @@
+---
+hibernate:
+    cache:
+        queries: false
+        use_second_level_cache: true
+        use_query_cache: false
+        region.factory_class: 'org.hibernate.cache.ehcache.EhCacheRegionFactory'
+
+dataSource:
+    pooled: true
+    jmxExport: true
+    driverClassName: "com.mysql.jdbc.Driver"
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    dbCreate: none
+    username: "ychefapp"
+    password: "ychefapp123"
+    #logSql: true
+    url: 'jdbc:mysql://localhost:3306/ychefapp?useUnicode=yes'
+
+app:
+    default:
+        imageServer:        'http://localhost:8080'
+        uploadDir:          '/uploadFiles'
+        uploadFullDir:      '/Users/jabue/apps/ychefapp/webapp-portal/src/main/webapp'
+        #jabuehome:/Users/Kris/Documents/yidaicode/data
+        #jabue:/Users/jabue/apps/data
+        stripePrivateKey:   'sk_test_OV9MsPmUznbrjoVj96TlLYhi'
+        stripePublicKey:    'pk_test_MZcXou1PcVcb5AmANyOcXQEi'
+        currency:           'cad'
+        gst:                1.05
+        email:
+            admin:          'chunlong.yang@ybagapp.com'
+
+grails:
+    mail:
+        host: "smtp.sendgrid.net"
+        port: "587"
+        username: "chunlong.yang@ybagapp.com"
+        password: "yang3550190"
+
+environments:
+    development:
+        dataSource:
+            dbCreate: none
+            username: "ychefapp"
+            password: "ychefapp123"
+            url: 'jdbc:mysql://localhost:3306/ychefapp?useUnicode=yes'
+    production:
+        dataSource:
+            dbCreate: none
+            username: "ychefapp"
+            password: "ychefapp123"
+            url: 'jdbc:mysql://localhost:3306/ychefapp?useUnicode=yes'
+            properties:
+                jmxEnabled: true
+                initialSize: 25
+                maxActive: 150
+                minIdle: 25
+                maxIdle: 50
+                maxWait: 10000
+                maxAge: 600000
+                timeBetweenEvictionRunsMillis: 5000
+                minEvictableIdleTimeMillis: 60000
+                validationQuery: SELECT 1
+                validationQueryTimeout: 3
+                validationInterval: 15000
+                testOnBorrow: true
+                testWhileIdle: true
+                testOnReturn: false
+                jdbcInterceptors: ConnectionState
+                defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+        app:
+            default:
+                imageServer:        'https://ychefapp.com'
+                uploadDir:          '/uploadFiles'
+                uploadFullDir:      '/home/ychefappc/program/data'
+                stripePrivateKey:   'sk_live_It20noBHVUndWLGtka9Cm6vC'
+                stripePublicKey:    'pk_live_h2KSrQlqHISfGEVGaWmGwpzJ'
+                email:
+                    admin:          'bobby.wang@ybagapp.com'
+        grails:
+            mail:
+                host: "smtp.sendgrid.net"
+                port: "587"
+                username: "hong.zhu@ybagapp.com"
+                password: "90GlrVqfdH0bIuUERSly8Q"
+
+---
+---
+grails:
+    profile: web
+    codegen:
+        defaultPackage: webapp.portal
+    spring:
+        transactionManagement:
+            proxies: false
+info:
+    app:
+        name: '@info.app.name@'
+        version: '@info.app.version@'
+        grailsVersion: '@info.app.grailsVersion@'
+spring:
+
+    groovy:
+        template:
+            check-template-location: false
+
+---
+grails:
+    mime:
+        disable:
+            accept:
+                header:
+                    userAgents:
+                        - Gecko
+                        - WebKit
+                        - Presto
+                        - Trident
+        types:
+            all: '*/*'
+            atom: application/atom+xml
+            css: text/css
+            csv: text/csv
+            form: application/x-www-form-urlencoded
+            html:
+              - text/html
+              - application/xhtml+xml
+            js: text/javascript
+            json:
+              - application/json
+              - text/json
+            multipartForm: multipart/form-data
+            pdf: application/pdf
+            rss: application/rss+xml
+            text: text/plain
+            hal:
+              - application/hal+json
+              - application/hal+xml
+            xml:
+              - text/xml
+              - application/xml
+    urlmapping:
+        cache:
+            maxsize: 1000
+    controllers:
+        defaultScope: singleton
+        upload:
+            maxFileSize: 10000000000000
+            maxRequestSize: 10000000000000
+    converters:
+        encoding: UTF-8
+    views:
+        default:
+            codec: html
+        gsp:
+            encoding: UTF-8
+            htmlcodec: xml
+            codecs:
+                expression: html
+                scriptlets: html
+                taglib: none
+                staticparts: none
+    plugin:
+        springsecurity:
+            rejectIfNoRule: false
+            fii:
+                rejectPublicInvocations: false
+            password:
+                algorithm: bcrypt
+            useExternalClasses: true
+            userLookup:
+                userDomainClassName: com.ychefapp.domain.User
+                usernamePropertyName: email
+            authority:
+                className: com.ychefapp.domain.Authority
+                nameField: name
+            #auth:
+                #   loginFormUrl: /login
+            apf:
+                filterProcessesUrl: /auth/login
+                usernameParameter: username
+                passwordParameter: password
+            rememberMe:
+                cookieName: rm_lo
+                parameter: rm
+                key: 'e\RQV{ZZ[aX^8;<g'
+    #           alwaysRemember: true
+            logout:
+                filterProcessesUrl: /auth/logout
+                postOnly: true
+            useSessionFixationPrevention: true
+            useSecurityEventListener: true
+            securityConfigType: InterceptUrlMap
+            interceptUrlMap:
+                /listing/detailPortal/**:   ["permitAll"]
+                /listing/search/**:   ["permitAll"]
+                /article/portal/**:   ["permitAll"]
+                /article/**:    ["hasAnyRole('ROLE_ROOT') and isFullyAuthenticated()"]
+                /listing/**:   ["hasAnyRole('ROLE_ROOT') and isFullyAuthenticated()"]
+                /dashboard/**:   ["hasAnyRole('ROLE_ROOT') and isFullyAuthenticated()"]
+                /event/save/**:   ["hasAnyRole('ROLE_ROOT') and isFullyAuthenticated()"]
+
+endpoints:
+    jmx:
+        unique-names: true
